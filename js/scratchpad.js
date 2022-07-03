@@ -17,8 +17,7 @@ const toggleUI = async () => {
   const status = mainContainer.style.display;
 
   if (status === "block") {
-    mainContainer.style.display = "none";
-    savePad();
+    hideUI();
   } else {
     mainContainer.style.display = "block";
     loadPadData();
@@ -121,6 +120,7 @@ const addHandlers = () => {
   saveButton.addEventListener("click", savePad);
   clearButton.addEventListener("click", clearPad);
   themeDropdown.addEventListener("change", saveTheme);
+  mainContainer.addEventListener("click", hideUI);
   document.addEventListener("click", hideUI);
   window.addEventListener("keydown", onTab);
 };
@@ -248,6 +248,8 @@ const onTab = (e) => {
 const hideUI = () => {
   const pad = document.querySelector("#main-container");
   pad.style.display = "none";
+
+  savePad();
 };
 
 const transmitMessage = (msg) => {
