@@ -1,6 +1,6 @@
 #scratchpad {
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: 0px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -39,6 +39,7 @@
   padding: 64px 32px 0px 32px;
   box-sizing: border-box;
   font-size: 1.5em;
+  line-height: 1.25em;
   font-family: "Courier New", Courier, monospace;
   border: none;
   white-space: pre-wrap;

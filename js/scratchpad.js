@@ -120,7 +120,6 @@ const addHandlers = () => {
   saveButton.addEventListener("click", savePad);
   clearButton.addEventListener("click", clearPad);
   themeDropdown.addEventListener("change", saveTheme);
-  mainContainer.addEventListener("click", hideUI);
   document.addEventListener("click", hideUI);
   window.addEventListener("keydown", onTab);
 };
