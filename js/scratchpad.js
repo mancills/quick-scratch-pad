@@ -203,11 +203,11 @@ const setTheme = (newTheme) => {
       setCursorEnd();
       break;
     case "glass-dark":
-      scratchpad.style.background = "rgba(0, 0, 0, 0.1)";
+      scratchpad.style.background = "rgba(0, 0, 0, 0.2)";
       scratchpad.style.backdropFilter = "blur(7px)";
       scratchpad.style.border = "1px solid rgba(255, 255, 255, 0.3)";
-      toolbar.style.background = "rgba(0, 0, 0, 0.1)";
-      pad.style.background = "rgba(0, 0, 0, 0.1)";
+      toolbar.style.background = "rgba(0, 0, 0, 0.2)";
+      pad.style.background = "rgba(0, 0, 0, 0.2)";
       pad.style.color = "#fff";
       themeDropdown.selectedIndex = 4;
 
