@@ -1,0 +1,104 @@
+<div id="scratchpad">
+  <div id="toolbar">
+    <div class="container">
+      <a
+        id="bold"
+        class="toolbar-btn"
+        title="Bold"
+        onclick="document.execCommand('bold', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/bold.svg" class="icon"
+      /></a>
+      <a
+        id="italic"
+        class="toolbar-btn"
+        title="Italic"
+        onclick="document.execCommand('italic', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/italic.svg" class="icon"
+      /></a>
+      <a
+        id="underline"
+        class="toolbar-btn"
+        title="Underline"
+        onclick="document.execCommand('underline', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/underline.svg" class="icon"
+      /></a>
+      <a
+        id="unordered"
+        class="toolbar-btn"
+        title="Unordered List"
+        onclick="document.execCommand('insertUnorderedList', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/list-ul.svg" class="icon"
+      /></a>
+      <a
+        id="ordered"
+        class="toolbar-btn"
+        title="Ordered List"
+        onclick="document.execCommand('insertOrderedList', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/list-ol.svg" class="icon"
+      /></a>
+      <a
+        id="justify-left"
+        class="toolbar-btn"
+        title="Justify Left"
+        onclick="document.execCommand('justifyLeft', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/align-left.svg" class="icon"
+      /></a>
+      <a
+        id="justify-center"
+        class="toolbar-btn"
+        title="Justify Center"
+        onclick="document.execCommand('justifyCenter', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/align-center.svg" class="icon"
+      /></a>
+      <a
+        id="justify-right"
+        class="toolbar-btn"
+        title="Justify Right"
+        onclick="document.execCommand('justifyRight', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/align-right.svg" class="icon"
+      /></a>
+      <a
+        id="justify-full"
+        class="toolbar-btn"
+        title="Justify Full"
+        onclick="document.execCommand('justifyFull', false, null)"
+        onmousedown="event.preventDefault();"
+        ><img src="/lib/font-awesome/align-justify.svg" class="icon"
+      /></a>
+      <select name="themes" id="theme-select">
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+        <option value="blue">Blue</option>
+        <option value="glass">Glass</option>
+      </select>
+    </div>
+    <div class="container">
+      <a
+        id="clear"
+        class="toolbar-btn"
+        title="Clear Pad"
+        onmousedown="event.preventDefault();"
+      >
+        <img src="" class="icon" /></a
+      ><a
+        id="save"
+        class="toolbar-btn"
+        title="Save Pad"
+        onmousedown="event.preventDefault();"
+      >
+        <img src="" class="icon"
+      /></a>
+    </div>
+  </div>
+  <div id="pad-container">
+    <div id="pad" contenteditable="true" tabindex="1"></div>
+  </div>
+</div>

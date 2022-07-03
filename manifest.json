@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Quick Scratch Pad",
+  "version": "0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quick-scratch-pad@smancil.com",
+      "strict_min_version": "42.0"
+    }
+  },
+  "description": "Quickly deploy notepad in browser which syncs across all tabs.",
+  "background": {
+    "scripts": ["/js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["/js/scratchpad.js"],
+      "css": ["/css/scratchpad.css"],
+      "match_about_blank": true,
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab", "tabs", "storage", "<all_urls>"],
+  "commands": {
+    "toggle-ui": {
+      "suggested_key": {
+        "default": "Alt+Shift+Y",
+        "linux": "Alt+Shift+N"
+      },
+      "description": "Open Quick Scratch Pad"
+    }
+  },
+  "web_accessible_resources": [
+    "/public/scratchpad.html",
+    "/css/scratchpad.css",
+    "/lib/bulma-0.9.4/bulma.min.css",
+    "/lib/font-awesome/*.svg"
+  ]
+}

@@ -1,0 +1,13 @@
+#main-container {
+  display: none;
+  position: fixed;
+  width: 60%;
+  min-width: 900px;
+  height: 60%;
+  min-height: 400px;
+  top: 0px;
+  left: 20%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 999999999 !important;
+}
