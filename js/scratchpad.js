@@ -18,6 +18,7 @@ const toggleUI = async () => {
 
   if (status === "block") {
     mainContainer.style.display = "none";
+    savePad();
   } else {
     mainContainer.style.display = "block";
     loadPadData();
