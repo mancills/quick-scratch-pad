@@ -52,12 +52,12 @@ option {
   height: 24px;
   width: 24px;
   margin-right: 15px;
-  padding: 4px;
+  padding: 3px;
 }
 .toolbar-btn:hover {
   cursor: pointer;
-  background-color: rgb(167, 167, 167);
   border-radius: 3px;
+  background-color: rgb(141, 141, 141);
 }
 .icon {
   height: 100%;
