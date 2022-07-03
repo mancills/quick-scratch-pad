@@ -188,15 +188,28 @@ const setTheme = (newTheme) => {
       });
       setCursorEnd();
       break;
-    case "glass":
-      scratchpad.style.background = "rgba(108, 122, 137, .40)";
-      scratchpad.style.backdropFilter = "saturate(180%) blur(10px)";
-      toolbar.style.backgroundColor = "rgba(108, 122, 137, .40)";
-      toolbar.style.backdropFilter = "saturate(180%) blur(10px)";
-      pad.style.backgroundColor = "rgba(108, 122, 137, .40)";
-      pad.style.backdropFilter = "saturate(180%) blur(10px)";
-      pad.style.color = "#fff";
+    case "glass-light":
+      scratchpad.style.background = "rgba(255, 255, 255, 0.1)";
+      scratchpad.style.backdropFilter = "blur(7px)";
+      scratchpad.style.border = "1px solid rgba(255, 255, 255, 0.3)";
+      toolbar.style.background = "rgba(255, 255, 255, 0.1)";
+      pad.style.background = "rgba(255, 255, 255, 0.1)";
+      pad.style.color = "#1b1b1b";
       themeDropdown.selectedIndex = 3;
+
+      icons.forEach((icon) => {
+        icon.style.filter = "none";
+      });
+      setCursorEnd();
+      break;
+    case "glass-dark":
+      scratchpad.style.background = "rgba(0, 0, 0, 0.1)";
+      scratchpad.style.backdropFilter = "blur(7px)";
+      scratchpad.style.border = "1px solid rgba(255, 255, 255, 0.3)";
+      toolbar.style.background = "rgba(0, 0, 0, 0.1)";
+      pad.style.background = "rgba(0, 0, 0, 0.1)";
+      pad.style.color = "#fff";
+      themeDropdown.selectedIndex = 4;
 
       icons.forEach((icon) => {
         icon.style.filter = "invert(1)";
